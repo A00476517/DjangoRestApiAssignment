@@ -75,3 +75,5 @@ curl -X POST http://127.0.0.1:8000/api/hotels/ \
      -H "Content-Type: application/json" \
      -d '{"name": "New Hotel", "location": "New Location", "stars": 4, "total_rooms": 75}'
 ```
+# Screenshots
+![Screenshot (1243)](https://github.com/A00476517/DjangoRestApiAssignment/assets/144840145/16767ecb-3910-46a7-9517-cf04d88a708f)
