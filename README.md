@@ -19,5 +19,59 @@ Start by cloning this repository to your local machine:
 
 ```bash
 git clone https://github.com/A00476517/DjangoRestApiAssignment.git
-cd DjangoRestApiAssignment
+cd DjangoRestApiAssignment/hotel_reservation
+```
+
+### 2. Install Dependencies
+
+Create a virtual environment and activate it:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set Up the Database
+
+Run migrations to set up your database:
+
+```bash
+python manage.py migrate
+```
+
+### 4. Run the Development Server
+
+Start the Django development server:
+
+```bash
+python manage.py runserver
+```
+The server will start running on http://127.0.0.1:8000/.
+
+### API Endpoints
+The application provides the following API endpoints:
+
+# GET /api/hotels/
+Retrieve a list of all hotels in the database.
+
+Example request:
+```bash
+curl -X GET http://127.0.0.1:8000/api/hotels/ -H "Accept: application/json"
+```
+
+# POST /api/hotels/
+
+Add a new hotel to the database.
+
+Example request:
+```bash
+curl -X POST http://127.0.0.1:8000/api/hotels/ \
+     -H "Content-Type: application/json" \
+     -d '{"name": "New Hotel", "location": "New Location", "stars": 4, "total_rooms": 75}'
 ```
