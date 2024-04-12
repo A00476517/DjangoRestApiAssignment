@@ -76,4 +76,6 @@ curl -X POST http://127.0.0.1:8000/api/hotels/ \
      -d '{"name": "New Hotel", "location": "New Location", "stars": 4, "total_rooms": 75}'
 ```
 # Screenshots
+![Screenshot (1242)](https://github.com/A00476517/DjangoRestApiAssignment/assets/144840145/8253916e-ea0c-4d52-9f48-b818aa55b036)
+
 ![Screenshot (1243)](https://github.com/A00476517/DjangoRestApiAssignment/assets/144840145/16767ecb-3910-46a7-9517-cf04d88a708f)
